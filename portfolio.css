@@ -1,6 +1,6 @@
 html {
-    scroll-behavior: smooth;
-    
+  scroll-behavior: smooth;
+  
 }
 
 body {
@@ -10,139 +10,241 @@ body {
   margin-right: 10%;
 }
 
-.logo{
-    float: left;
-    height: 60px;
-    
-    margin: 10px;
-    position: absolute;
-    
+
+/* NavBAR CSS */
+.logo {
+  float: left;
+  height: 60px;
+
+  margin: 10px;
+  position: absolute;
+
 }
 
 .topnav {
-    overflow: hidden;
-    max-width: 100%;
-    padding: 10px;
-    /* margin-left: 10%;
-    margin-right: 10%; */
-    border-bottom: 3px solid slateblue;
-    
-  }
+  overflow: hidden;
+  max-width: 100%;
+  padding: 10px;
+
+  border-bottom: 3px solid slateblue;
+
+}
+
+.topnav a {
+  float: right;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: transform .2s;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px 10px;
+}
+
+.topnav a.active {
+
+  color: aqua;
+  border-radius: 10px;
   
-  .topnav a {
-    float: right;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 20px;
-    margin: 10px 10px;
-  }
-  .topnav a.active {
-    
-    color: aqua;
-    border-radius: 10px;
-  }
-  .topnav a:hover {
-    color: #E31F71;
-    border-radius: 10px;
-  }
+}
+
+.topnav a:hover {
+  color: #e22f7a;
+  border-radius: 10px;
+  transform: scale(1.2);
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+/* Home Countainer CSS */
+
+.home-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+
+.homeImage {
+
+  opacity: 0.8;
   
+  /* margin-right:100px; */
+  max-height: 400px;
+
+}
+
+
+.flex-item {
   
+  margin: 5%;
   
-  .topnav .icon {
+}
+
+.homeText {
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20pt;
+  text-overflow: initial;
+  position: relative;
+}
+
+
+
+.homeHeader {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 40pt;
+  font-weight: bold;
+  line-height: 0;
+  text-overflow: initial;
+  position: relative;
+}
+
+.button-hire {
+  display: block;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  max-width: 100px;
+  background-color: slateblue;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 50px 0px;
+  transition: transform .2s;
+  border-radius: 30px;
+}
+
+.button-hire:hover{
+  transform: scale(1.2);
+}
+
+
+
+/* About Countainer CSS */
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+}
+
+.aboutImage {
+
+  max-height: 600px;
+  margin:10%;
+  transition: transform .2s;
+  box-shadow: 10px 10px 5px slateblue;
+  /* border: 10px solid slateblue;
+  border-radius: 5%; */
+  
+}
+
+.aboutImage:hover{
+  transform: scale(1.2);
+}
+
+.aboutText {
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20pt;
+  
+}
+
+.about-flex-item {
+  flex: 50%;
+  margin : 5%;
+  
+}
+
+.sectionHeader{
+  color:white;
+  border-bottom: 10px solid slateblue;
+  border-bottom-radius: 50px ;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .topnav a:not(:first-child) {
     display: none;
   }
 
-
-  .home-container{
-    display: flex;
-    max-height: 500px;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-
-  .homeImage{
-    float: inline-end;
-    opacity: 0.8;
-    margin-top:80px;
-    margin-right:100px;
-    max-height: 400px;
-    
-    
-  }
-
-  .homeText{
-    
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-    line-height: 0;
-    
-  }
-
-  .homeHeader{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 0;
-    
-  }
-
-  .button-hire{
+  .topnav a.icon {
+    float: right;
     display: block;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    max-width: 100px;
-    background-color: slateblue;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 50px 0px;
-    
-    border-radius: 30px;
+
+
   }
-  
-   
+
+  .about-container{
+    flex-wrap: wrap;
+  }
+  .homeImage {
+    max-height: 300px;
+    margin: 80px;
+
+  }
+
+  .homeText {
+    font-size: 15pt;
+    margin-top: 0px;
+  }
+
+  .homeHeader {
+    font-size: 30pt;
+  }
+
+}
+
 @media screen and (max-width: 900px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-      
-    
-    }
-    .homeImage{
-      max-height: 300px;
-      margin:80px;
-      display: none;
-    }
-
-    .homeText{font-size: 15px;}
-    .homeHeader{font-size: 30px;}
-
-    }
+  .topnav.responsive {
+    position: relative;
   }
-  
-  @media screen and (max-width: 900px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      
-      display: block;
-      text-align: left;
-      
-    }
-  } 
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+
+    display: block;
+    text-align: left;
+
+  }
+}
