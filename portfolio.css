@@ -369,7 +369,7 @@ input[type=text], input[type=email], input[type=number], textarea {
 
 
   .about-flex-item{
-    margin-right: 15%;
+    margin: 5%;
     
   }
   .aboutImage {
@@ -395,6 +395,7 @@ input[type=text], input[type=email], input[type=number], textarea {
   
   .sectionHeader{
     max-width: 50%;
+    font-size: 18pt;
   }
 
   .flex-item-service{
@@ -406,6 +407,13 @@ input[type=text], input[type=email], input[type=number], textarea {
   .portfolio-img{
     min-width: 90%;  
   }
+
+  .service-text{
+    font-size: 12pt;   
+ }
+ .service-header{
+   font-size: 15pt;
+ }
   
 
 }
@@ -433,7 +441,8 @@ input[type=text], input[type=email], input[type=number], textarea {
 
   .aboutText {
 
-    text-align: justify;
+    text-align: none;
+    font-size: 15pt;
   }
 
 
@@ -449,6 +458,11 @@ input[type=text], input[type=email], input[type=number], textarea {
 
   .info-text{
     font-size: 15pt;   
+  }
+
+  .footer-container{
+    flex-direction: column;
+    float: none;
   }
   
   
