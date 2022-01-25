@@ -433,7 +433,7 @@ input[type=text], input[type=email], input[type=number], textarea {
 
   .aboutText {
 
-    text-align: left;
+    text-align: justify;
   }
 
 
